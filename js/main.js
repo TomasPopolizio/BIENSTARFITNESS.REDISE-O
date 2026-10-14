@@ -53,7 +53,9 @@
   $("#map").src = `https://www.google.com/maps?q=${encodeURIComponent(D.contacto.mapsQuery)}&output=embed`;
   $("#igLink").href = D.contacto.instagram;
   $("#igTutorial").href = D.contacto.instagram;
-  $("#appLink").href = D.contacto.appTurnos;
+  // Si todavía no hay link de la agenda, se oculta el botón
+  if (D.contacto.appTurnos && D.contacto.appTurnos !== "#") $("#appLink").href = D.contacto.appTurnos;
+  else $("#appLink").hidden = true;
   $("#vipPrice").textContent = D.vipPrecio;
   $("#year").textContent = new Date().getFullYear();
 

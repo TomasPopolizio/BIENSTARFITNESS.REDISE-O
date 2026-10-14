@@ -13,7 +13,7 @@ window.BIENSTAR = {
     whatsapp: "5491135225045",
     direccion: "Bartolomé Mitre 3731 2B",
     localidad: "San Martín, Buenos Aires",
-    instagram: "https://www.instagram.com/", // TODO: link al Instagram real del estudio
+    instagram: "https://www.instagram.com/bienstarsanmartin/",
     appTurnos: "#", // TODO: link a la agenda virtual / app de turnos
     mapsQuery: "Bienstar fitness, Bartolomé Mitre 3731, San Martín, Buenos Aires",
   },

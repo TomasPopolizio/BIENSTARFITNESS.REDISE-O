@@ -14,8 +14,7 @@ Sitio estático (HTML + CSS + JS), sin dependencias ni build.
 Todo el contenido está en **`js/data.js`**: horarios, clases, foco del circuito, pautas, FAQ, capacitaciones, reseñas y contacto.
 
 Pendiente de completar (marcado con `TODO`):
-- `contacto.instagram` → link del Instagram del estudio.
-- `contacto.appTurnos` → link de la agenda virtual.
+- `contacto.appTurnos` → link de la agenda virtual (mientras esté en "#", el botón "Abrir la agenda" no se muestra).
 
 ## Ver localmente
 ```bash
