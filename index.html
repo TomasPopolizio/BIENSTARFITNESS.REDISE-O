@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bienstar Fitness · Pilates en San Martín</title>
-  <meta name="description" content="Estudio de Pilates Reformer, Mat, Postural y Funcional en San Martín, Buenos Aires. Grupos reducidos, profesoras que se capacitan y un lugar muy humano. 4.9★ en Google." />
+  <meta name="description" content="Pilates Reformer, Pilates Circuito y Entrenamiento Funcional en San Martín, Buenos Aires. Más de 18 años de experiencia, dos salas y profesoras altamente capacitadas. 4.9★ en Google." />
   <meta name="theme-color" content="#F5EFE6" />
-  <meta property="og:title" content="Bienstar Fitness · Pilates en San Martín" />
-  <meta property="og:description" content="Más que un lugar para entrenar. Pilates Reformer, Mat y Funcional en San Martín." />
+  <meta property="og:title" content="Bienstar Fitness · Entrená mejor, sentite mejor" />
+  <meta property="og:description" content="Pilates y entrenamiento consciente en San Martín. Reformer, Circuito y Funcional." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_AR" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -22,7 +22,7 @@
     "@context": "https://schema.org",
     "@type": "ExerciseGym",
     "name": "Bienstar Fitness",
-    "description": "Centro de Pilates en San Martín, Buenos Aires",
+    "description": "Pilates Reformer, Pilates Circuito y Entrenamiento Funcional en San Martín, Buenos Aires",
     "telephone": "+54 11 3522-5045",
     "address": {
       "@type": "PostalAddress",
@@ -50,18 +50,19 @@
     <div class="container nav__inner">
       <a href="#inicio" class="brand" aria-label="Bienstar Fitness, inicio">
         <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true">
-          <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M11 26c4-9 14-9 18 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          <circle cx="20" cy="13" r="3.2" fill="var(--gold)"/>
+          <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10.5 26c4.5-9.5 14.5-9.5 19 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="20" cy="13" r="3.4" fill="var(--gold)"/>
         </svg>
         <span>Bienstar<em>fitness</em></span>
       </a>
       <nav class="nav__links" id="navLinks" aria-label="Principal">
+        <a href="#nosotros">Nosotros</a>
         <a href="#clases">Clases</a>
         <a href="#horarios">Horarios</a>
-        <a href="#planes">Planes</a>
-        <a href="#equipo">Equipo</a>
-        <a href="#opiniones">Opiniones</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#capacitaciones">Formación</a>
+        <a href="#faq">Preguntas</a>
         <a href="#contacto">Contacto</a>
         <a href="#" class="btn btn--primary btn--sm js-wa" data-msg="¡Hola! Quiero reservar una clase en Bienstar 💛">Reservá tu clase</a>
       </nav>
@@ -79,43 +80,54 @@
       <div class="container hero__grid">
         <div class="hero__copy">
           <div class="hero__meta reveal">
-            <span class="status" id="status"><span class="status__dot"></span><span class="status__text">—</span></span>
-            <span class="rating-pill">
+            <span class="status" id="status"><span class="status__dot"></span><span class="status__text">Horarios</span></span>
+            <a class="rating-pill" href="#opiniones">
               <span class="stars" aria-hidden="true">★★★★★</span>
-              <strong>4.9</strong> · 150 opiniones en Google
-            </span>
+              <strong>4.9</strong> · 150 opiniones
+            </a>
           </div>
-          <h1 class="reveal">Más que un lugar<br/>para <em>entrenar</em>.</h1>
-          <p class="hero__lead reveal">Pilates Reformer, Mat y Funcional en San Martín. Grupos reducidos, profesoras que se capacitan todo el tiempo y un espacio cálido donde cada clase es para vos.</p>
+          <h1 class="reveal">Entrená mejor.<br/><em>Sentite mejor.</em></h1>
+          <p class="hero__lead reveal">Pilates y entrenamiento consciente en un espacio pensado para vos. Reformer, Circuito y Funcional en San Martín, con más de 18 años acompañando a cada alumna.</p>
           <div class="hero__cta reveal">
-            <a href="#" class="btn btn--primary js-wa" data-msg="¡Hola! Quiero reservar mi clase de prueba en Bienstar 💛">Reservá tu clase de prueba</a>
+            <a href="#" class="btn btn--primary js-wa" data-msg="¡Hola! Quiero reservar una clase en Bienstar 💛">Reservá por WhatsApp</a>
             <a href="#quiz" class="btn btn--ghost">¿Qué clase es para mí? →</a>
           </div>
+          <div class="next-class reveal" id="nextClass" hidden></div>
         </div>
         <div class="hero__visual reveal" aria-hidden="true">
           <div class="arch">
             <svg viewBox="0 0 300 380" class="arch__figure">
               <defs>
                 <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#E9C7A8"/>
-                  <stop offset="1" stop-color="#C2764F"/>
+                  <stop offset="0" stop-color="#E7BE9C"/>
+                  <stop offset="1" stop-color="#B8693F"/>
                 </linearGradient>
               </defs>
-              <circle cx="220" cy="90" r="38" fill="#D4A24C" opacity=".9"/>
+              <circle cx="222" cy="92" r="40" fill="#D4A24C" opacity=".92"/>
               <!-- reformer -->
-              <rect x="30" y="300" width="240" height="14" rx="7" fill="#3B2A20" opacity=".85"/>
-              <rect x="45" y="314" width="8" height="30" rx="3" fill="#3B2A20" opacity=".6"/>
-              <rect x="247" y="314" width="8" height="30" rx="3" fill="#3B2A20" opacity=".6"/>
-              <rect x="80" y="286" width="90" height="16" rx="6" fill="#FFF8EE"/>
-              <!-- figure (bridge pose) -->
-              <path class="breathe" d="M90 286 C 110 210, 170 200, 205 250 L 228 292" fill="none" stroke="url(#g1)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="80" cy="276" r="15" fill="#C2764F"/>
-              <path d="M205 250 L 250 270" stroke="#C2764F" stroke-width="14" stroke-linecap="round"/>
+              <rect x="26" y="300" width="248" height="14" rx="7" fill="#3B2A20" opacity=".85"/>
+              <rect x="42" y="314" width="8" height="32" rx="3" fill="#3B2A20" opacity=".55"/>
+              <rect x="250" y="314" width="8" height="32" rx="3" fill="#3B2A20" opacity=".55"/>
+              <rect x="252" y="250" width="8" height="52" rx="3" fill="#3B2A20" opacity=".75"/>
+              <rect x="78" y="286" width="96" height="16" rx="6" fill="#FFF8EE"/>
+              <path d="M174 294 H 252" stroke="#3B2A20" stroke-width="2" stroke-dasharray="4 5" opacity=".5"/>
+              <!-- figura: puente -->
+              <!-- brazos sobre el carro -->
+              <path d="M104 282 L 160 286" stroke="#C98258" stroke-width="10" stroke-linecap="round"/>
+              <g class="breathe">
+                <!-- torso (hombros a cadera) -->
+                <path d="M100 280 L 160 232" stroke="url(#g1)" stroke-width="26" stroke-linecap="round"/>
+                <!-- muslo -->
+                <path d="M160 232 L 214 210" stroke="#B8693F" stroke-width="20" stroke-linecap="round"/>
+              </g>
+              <!-- pierna hacia la barra -->
+              <path d="M214 210 L 250 252" stroke="#B8693F" stroke-width="16" stroke-linecap="round"/>
+              <circle cx="80" cy="276" r="16" fill="#B8693F"/>
             </svg>
           </div>
           <div class="float-card float-card--a">
-            <strong>Grupos reducidos</strong>
-            <span>Atención personalizada</span>
+            <strong>2 salas</strong>
+            <span>Reformer · Circuito · Funcional</span>
           </div>
           <div class="float-card float-card--b">
             <span class="float-card__emoji">💛</span>
@@ -125,40 +137,26 @@
       </div>
       <div class="marquee" aria-hidden="true">
         <div class="marquee__track">
-          <span>Reformer</span><i>✦</i><span>Mat</span><i>✦</i><span>Postural</span><i>✦</i><span>Funcional</span><i>✦</i><span>Respiración</span><i>✦</i><span>Fuerza</span><i>✦</i><span>Movilidad</span><i>✦</i>
-          <span>Reformer</span><i>✦</i><span>Mat</span><i>✦</i><span>Postural</span><i>✦</i><span>Funcional</span><i>✦</i><span>Respiración</span><i>✦</i><span>Fuerza</span><i>✦</i><span>Movilidad</span><i>✦</i>
+          <span>Reformer</span><i>✦</i><span>Chair</span><i>✦</i><span>Cadillac</span><i>✦</i><span>Corrector Espinal</span><i>✦</i><span>Circuito</span><i>✦</i><span>Funcional</span><i>✦</i><span>Pilates Power</span><i>✦</i>
+          <span>Reformer</span><i>✦</i><span>Chair</span><i>✦</i><span>Cadillac</span><i>✦</i><span>Corrector Espinal</span><i>✦</i><span>Circuito</span><i>✦</i><span>Funcional</span><i>✦</i><span>Pilates Power</span><i>✦</i>
         </div>
       </div>
     </section>
 
-    <!-- POR QUÉ -->
-    <section class="section" id="porque">
-      <div class="container">
-        <header class="section__head reveal">
-          <span class="eyebrow">Por qué Bienstar</span>
-          <h2>Lo que dicen nuestras alumnas, <em>en cuatro palabras</em>.</h2>
-        </header>
-        <div class="pillars">
-          <article class="pillar reveal">
-            <span class="pillar__n">01</span>
-            <h3>Humano</h3>
-            <p>Te conocemos por tu nombre. Acompañamos tu proceso, no sólo tu entrenamiento.</p>
-          </article>
-          <article class="pillar reveal">
-            <span class="pillar__n">02</span>
-            <h3>Profesional</h3>
-            <p>Profesoras que se capacitan constantemente, puntuales y atentas a cada detalle.</p>
-          </article>
-          <article class="pillar reveal">
-            <span class="pillar__n">03</span>
-            <h3>Flexible</h3>
-            <p>Horarios accesibles y reprogramación de clases desde nuestra app, a tu ritmo.</p>
-          </article>
-          <article class="pillar reveal">
-            <span class="pillar__n">04</span>
-            <h3>Impecable</h3>
-            <p>Un estudio luminoso, ordenado y con una limpieza que se nota apenas entrás.</p>
-          </article>
+    <!-- NOSOTROS -->
+    <section class="section" id="nosotros">
+      <div class="container about">
+        <div class="about__copy">
+          <span class="eyebrow reveal">Quiénes somos</span>
+          <h2 class="reveal">Conectá cuerpo, mente y espíritu <em>a través del movimiento</em>.</h2>
+          <p class="reveal">En Bienstar Fitness acompañamos a cada alumna de manera personalizada, cuidando su salud, sus objetivos y cada detalle del proceso, respetando los tiempos y necesidades de cada etapa.</p>
+          <p class="reveal">Nuestro equipo de profesoras altamente capacitadas te guía en cada movimiento para que entrenes de forma segura, consciente y efectiva.</p>
+        </div>
+        <div class="stats">
+          <div class="stat reveal"><span class="stat__n" data-count="18">18</span><span class="stat__l">años de experiencia</span></div>
+          <div class="stat reveal"><span class="stat__n">2</span><span class="stat__l">salas con modalidades combinables</span></div>
+          <div class="stat reveal"><span class="stat__n">50'</span><span class="stat__l">por clase, en grupos reducidos</span></div>
+          <div class="stat reveal"><span class="stat__n">4.9★</span><span class="stat__l">en 150 opiniones de Google</span></div>
         </div>
       </div>
     </section>
@@ -166,28 +164,74 @@
     <!-- CLASES -->
     <section class="section section--tint" id="clases">
       <div class="container">
-        <header class="section__head reveal">
-          <span class="eyebrow">Clases</span>
-          <h2>Encontrá tu forma de <em>moverte</em>.</h2>
+        <header class="section__head section__head--split reveal">
+          <div>
+            <span class="eyebrow">Clases</span>
+            <h2>Control, conciencia corporal y <em>fluidez</em>.</h2>
+          </div>
+          <p>Nos especializamos en el entrenamiento desde los principios del método Pilates, con progresión individual y en un entorno atento y profesional.</p>
         </header>
         <div class="classes" id="classesGrid"></div>
       </div>
     </section>
 
+    <!-- SALAS -->
+    <section class="section" id="salas">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Dos salas</span>
+          <h2>Elegí tu espacio, <em>o combiná los dos</em>.</h2>
+        </header>
+        <div class="rooms">
+          <article class="room reveal">
+            <span class="room__tag">Sala 1</span>
+            <h3>Pilates Reformer &amp; Funcional</h3>
+            <ul>
+              <li><b>Turnos fijos</b> que se cargan automáticamente mes a mes.</li>
+              <li>Pilates, Pilates Power y Entrenamiento Funcional.</li>
+              <li>A veces, clases extra sin costo según disponibilidad.</li>
+            </ul>
+          </article>
+          <div class="rooms__plus reveal" aria-hidden="true">+</div>
+          <article class="room room--alt reveal">
+            <span class="room__tag">Sala 2</span>
+            <h3>Pilates Circuito</h3>
+            <ul>
+              <li><b>Turnos libres</b> que elegís vos desde la agenda virtual.</li>
+              <li>Un foco distinto cada día de la semana.</li>
+              <li>Estaciones dinámicas de fuerza y control.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="vip reveal">
+          <div>
+            <span class="vip__badge">Pase VIP · Acceso Plus</span>
+            <p>¿Querés entrenar en las dos salas? Sumá el Acceso Plus a tu pack y combiná modalidades.</p>
+          </div>
+          <strong class="vip__price" id="vipPrice">$7.000</strong>
+        </div>
+      </div>
+    </section>
+
     <!-- HORARIOS -->
-    <section class="section" id="horarios">
+    <section class="section section--tint" id="horarios">
       <div class="container">
         <header class="section__head section__head--split reveal">
           <div>
             <span class="eyebrow">Horarios</span>
-            <h2>Una semana <em>pensada para vos</em>.</h2>
+            <h2>Tu semana en <em>Bienstar</em>.</h2>
           </div>
-          <p>Elegí el día y el tipo de clase. Reservás y reprogramás desde la app.</p>
+          <p>Elegí sala y día. Marcamos en vivo la próxima clase de hoy.</p>
         </header>
         <div class="schedule reveal">
+          <div class="seg" role="tablist" id="roomTabs" aria-label="Sala">
+            <button role="tab" data-room="1" aria-selected="true">Sala 1 · Reformer &amp; Funcional</button>
+            <button role="tab" data-room="2" aria-selected="false">Sala 2 · Circuito</button>
+          </div>
           <div class="tabs" role="tablist" id="dayTabs" aria-label="Día de la semana"></div>
-          <div class="chips" id="classChips" aria-label="Filtrar por clase"></div>
+          <p class="schedule__focus" id="dayFocus"></p>
           <ul class="slots" id="slots" aria-live="polite"></ul>
+          <p class="schedule__note">Sábados, domingos y feriados no se dictan clases.</p>
         </div>
       </div>
     </section>
@@ -198,41 +242,49 @@
         <div class="quiz__intro reveal">
           <span class="eyebrow eyebrow--light">Test de 30 segundos</span>
           <h2>¿Qué clase es <em>para vos</em>?</h2>
-          <p>Respondé tres preguntas y te recomendamos por dónde empezar.</p>
+          <p>Respondé tres preguntas y te recomendamos sala, clase y horario para empezar.</p>
         </div>
         <div class="quiz__card reveal" id="quizCard" aria-live="polite"></div>
       </div>
     </section>
 
-    <!-- PLANES -->
-    <section class="section" id="planes">
+    <!-- COMO FUNCIONA -->
+    <section class="section" id="como-funciona">
       <div class="container">
         <header class="section__head reveal">
-          <span class="eyebrow">Planes</span>
-          <h2>Simple, claro y <em>sin letra chica</em>.</h2>
+          <span class="eyebrow">Cómo funciona</span>
+          <h2>Empezar es <em>muy simple</em>.</h2>
         </header>
-        <div class="plans" id="plansGrid"></div>
-      </div>
-    </section>
-
-    <!-- EQUIPO -->
-    <section class="section section--tint" id="equipo">
-      <div class="container">
-        <header class="section__head reveal">
-          <span class="eyebrow">Equipo</span>
-          <h2>Las profes que <em>hacen la diferencia</em>.</h2>
-        </header>
-        <div class="team" id="teamGrid"></div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__n">1</span>
+            <h3>Escribinos</h3>
+            <p>Mandanos un WhatsApp al 11 3522-5045 y te contamos los aranceles vigentes.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__n">2</span>
+            <h3>Elegí tu pack</h3>
+            <p>Packs mensuales de clases, válidos del día 1 al último día del mes.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__n">3</span>
+            <h3>Reservá en la app</h3>
+            <p>Turno fijo en Sala 1 o libre en Sala 2. Cancelá o reprogramá con 2 h de anticipación.</p>
+          </li>
+        </ol>
+        <div class="center reveal">
+          <a href="#" class="btn btn--primary js-wa" data-msg="¡Hola! Quisiera conocer los aranceles vigentes de los packs 💛">Consultar aranceles</a>
+        </div>
       </div>
     </section>
 
     <!-- OPINIONES -->
-    <section class="section" id="opiniones">
+    <section class="section section--tint" id="opiniones">
       <div class="container">
         <header class="section__head section__head--split reveal">
           <div>
             <span class="eyebrow">Opiniones</span>
-            <h2><span class="big-rating">4.9</span> <em>de 150 opiniones</em>.</h2>
+            <h2><span class="big-rating">4.9</span> <em>en 150 opiniones</em>.</h2>
           </div>
           <div class="carousel__ctrl">
             <button class="round-btn" id="prevReview" aria-label="Opinión anterior">←</button>
@@ -243,22 +295,58 @@
       </div>
     </section>
 
+    <!-- CAPACITACIONES -->
+    <section class="section section--dark" id="capacitaciones">
+      <div class="container training">
+        <div class="training__copy">
+          <span class="eyebrow eyebrow--light reveal">Capacitaciones 2026</span>
+          <h2 class="reveal">Formación en Pilates para <em>profesionales del movimiento</em>.</h2>
+          <p class="reveal">Un programa completo que integra teoría y práctica, con foco en la calidad de ejecución, la corrección postural y la planificación efectiva de clases. Grupos reducidos y formación progresiva para profesionales seguros y versátiles.</p>
+          <a href="#" class="btn btn--light reveal js-wa" data-msg="¡Hola! Quiero información sobre las capacitaciones 2026 💛">Quiero información</a>
+        </div>
+        <ul class="training__list" id="trainingList"></ul>
+      </div>
+    </section>
+
+    <!-- PAUTAS + FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Todo claro, <em>desde el primer día</em>.</h2>
+        </header>
+        <div class="faq-grid">
+          <div class="reveal">
+            <h3 class="faq-grid__title">Preguntas</h3>
+            <div class="accordion" id="faqList"></div>
+          </div>
+          <div class="reveal">
+            <h3 class="faq-grid__title">Pautas y acuerdos</h3>
+            <div class="accordion" id="rulesList"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- APP -->
-    <section class="section">
+    <section class="section section--flush">
       <div class="container">
         <div class="app-banner reveal">
           <div class="app-banner__copy">
-            <span class="eyebrow eyebrow--light">Turnos en tu bolsillo</span>
-            <h2>Reservá, cancelá y <em>reprogramá</em> desde la app.</h2>
-            <p>“Tiene una app practiquísima para gestionar los turnos.” — una de nuestras alumnas.</p>
-            <a href="#" class="btn btn--light" id="appLink">Descargar la app</a>
+            <span class="eyebrow eyebrow--light">Agenda virtual</span>
+            <h2>Reservá, cancelá y <em>reprogramá</em> desde tu celu.</h2>
+            <p>“Tiene una app practiquísima para gestionar los turnos.” Descargala o entrá desde cualquier navegador. En nuestro Instagram tenés el tutorial paso a paso.</p>
+            <div class="app-banner__cta">
+              <a href="#" class="btn btn--light" id="appLink">Abrir la agenda</a>
+              <a href="#" class="btn btn--outline-light" id="igTutorial" target="_blank" rel="noopener">Ver tutorial</a>
+            </div>
           </div>
           <div class="phone" aria-hidden="true">
             <div class="phone__screen">
               <div class="phone__header">Mis clases</div>
-              <div class="phone__slot"><b>Reformer</b><span>Lun · 19:00</span><i>Confirmada</i></div>
-              <div class="phone__slot"><b>Mat</b><span>Mié · 09:00</span><i>Confirmada</i></div>
-              <div class="phone__slot phone__slot--muted"><b>Postural</b><span>Vie · 09:00</span><i>Reprogramar</i></div>
+              <div class="phone__slot"><b>Pilates</b><span>Lun · 19:00 · Sala 1</span><i>Turno fijo</i></div>
+              <div class="phone__slot"><b>Circuito · Fusion Mix</b><span>Jue · 18:00 · Sala 2</span><i>Reservada</i></div>
+              <div class="phone__slot phone__slot--muted"><b>Pilates Power</b><span>Mar · 17:00 · Sala 1</span><i>Reprogramar</i></div>
             </div>
           </div>
         </div>
@@ -266,14 +354,14 @@
     </section>
 
     <!-- CONTACTO -->
-    <section class="section section--tint" id="contacto">
+    <section class="section" id="contacto">
       <div class="container contact">
         <div class="contact__info reveal">
-          <span class="eyebrow">Visitanos</span>
+          <span class="eyebrow">Contacto</span>
           <h2>Te esperamos en <em>San Martín</em>.</h2>
           <ul class="contact__list">
             <li><span>Dirección</span><strong id="cAddress"></strong></li>
-            <li><span>Teléfono</span><a id="cPhone"></a></li>
+            <li><span>WhatsApp</span><a id="cPhone"></a></li>
             <li><span>Horario</span><strong>Lunes a viernes · 8 a 21 h</strong></li>
           </ul>
           <div class="contact__cta">
@@ -292,15 +380,15 @@
     <div class="container footer__inner">
       <div>
         <a href="#inicio" class="brand brand--light"><span>Bienstar<em>fitness</em></span></a>
-        <p>Centro de Pilates · San Martín, Buenos Aires</p>
+        <p>Entrená mejor · Sentite mejor</p>
       </div>
       <div class="footer__links">
         <a href="#clases">Clases</a>
         <a href="#horarios">Horarios</a>
-        <a href="#planes">Planes</a>
+        <a href="#faq">Preguntas</a>
         <a href="#" id="igLink" target="_blank" rel="noopener">Instagram</a>
       </div>
-      <p class="footer__copy">© <span id="year"></span> Bienstar Fitness. Hecho con 💛</p>
+      <p class="footer__copy">© <span id="year"></span> Bienstar Fitness · San Martín, Buenos Aires</p>
     </div>
   </footer>
 
